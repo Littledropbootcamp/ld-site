@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" media="screen and (max-width: 700px)" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Littledrop-Education || Website</title>
+  <link rel="icon" type="image/svg" sizes="35x35" href="Images/title-img.svg">
+</head>
+<body id="home">
+  <div class="container1">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <img class="navbar-toggler-icon" src="Images/toggle-button.svg" alt="toogle-img"/>
+        </button>
+        <a href="./index.html"><img class="logo" src="Images/ld-logo.svg" alt="logo-image"/></a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <img class="navbar-toggler-icon" id="close-nav" src="Images/icon-closenav.svg" alt="toogle-img"/>
+          </button>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./About">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./course">Coding Courses</a></li>
+                <li><a class="dropdown-item" href="./non-coding">Non-Coding Courses</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex">
+          <input class="form-control me-2" id="search-input" type="search" placeholder="Search for courses"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>  
+    </nav>
+  </div>
+  <!-------------------------------------------------------------------End of Navbar----------------------------------->
+  <div class="about-pageimg"></div>
+  <section class="about-section">
+  <h1 class="about-title">About Us</h1>
+  <p>The Little Drop (LD) Coding e-Bootcamp is a project supported by City Open College Foundation – a non-profit college registered in Nigeria by the Corporate Affairs Commission with Registration No. 155074.</p>
+
+<section class="our-aim">
+  <h2>Our Mission</h2>
+  <div class="col-about1">
+  <p>Anyone that is over 18 and with the right attitude and aptitude to learn to program. Also, it’s important to note that it is designed mainly for busy individuals who perhaps think they can’t become programmers while we think they can. Our primary focus is not on “aptitude” but the “attitude” towards learning. Among our objectives are:
+    · To reduce the jobless rate by giving opportunities to highly dedicated individuals to gain digital skills that they can leverage for employment opportunities.
+    · To assist individuals who cannot afford expensive Bootcamps by providing an enabling environment to develop their employability skills to achieve their IT dreams.
+    
+  </p>
+  <img class="about-image" src="Images/e-learning.jpg">
+</div>
+<h2>Our Vision</h2>
+<div class="col-about1">
+  <p>Mentees should be able to develop their coding skills up to primary or developer’s level on comp the programme; Mentees should hope to transition into paid employment in the IT sector; Mentees should be willing to contribute positively to society through the use of their newly acquired skills.
+  </p>
+  <img class="about-image" src="Images/e-learning3.jpg">
+</div>
+<h2>Our Aim</h2>
+<div class="col-about1">
+  <p>To assist unemployed youth, empower women to develop employability skills and build a solid foundation in a chosen career path in IT.
+  </p>
+  <div>
+  <img class="about-image1" src="Images/banner.jpg">
+</div>
+</div>
+</section>
+</section>
+<!--------------------------------------------------------------------------->
+<footer id="footer">
+  <div class="footer">
+  <a href="./"><img class="footer-logo" src="Images/ld-logo.svg" alt="ld-logo"/></a>
+  <div class="footer-text">
+    <h5>About Us</h5>
+    <p>We are a not-for-profit organization</p>
+    <a href="./About">Learn more</a>
+  </div>
+  <div class="footer-text">
+      <h5>Contact Us</h5>
+  <a href="#">Email: littledropedu@gmail.com</a>
+  <br>
+  <a href ="#">Phone: 09135962695</a> 
+  </div>
+  <div class="footer-text">
+    <button class="donate" id="donate-btn" onclick="showDiv()">Donate</button>
+    <p>
+      To keep the bootcamp running for free, your kind support is highly needed. Please hit the donate tab for details. Thank you as you donate genourously towards the growth of this project.
+    </p>
+  </div>
+<div class="show-details" id="show-div">
+  <div class="donation-tab">
+  <div>
+  <img class="navbar-toggler-icon" id="close-donate" onclick="hideDiv()" src="Images/icon-closenav.svg" alt="toogle-img"/>
+  <h5>Dollar Donation</h5>
+  <p>Account Name: LITTLE DROP CHARITY ENDOWMENT INITIATIVE</p>
+    <p> Jaiz Bank(Dollar)</p>
+    <p>Account Number: 0004540755</p>
+    <p>Ref: Edu Project(please add this reference)</p>
+  </div>
+  <br>
+  <br>
+  <div>
+  <h5>Naira Account</h5>
+  <p>You can send your Naira donations to: Little Drop Education Project:
+   <p>Bank Name: Jaiz</p>
+    <p>Account Name: Little Drop Charity -Education Project</p>
+    <p>Account Number: 0004586951</p>
+<p><strong>Thank You</strong></p>
+</div>
+</div>
+</div>
+</div>
+
+  <div class="social-media-icons">
+    <img src="Images/facebook.png" alt="facebook-icon">
+    <img src="Images/linkedin.png" alt="in">
+    <img src="Images/twitter.png" alt="twit">
+    <img src="Images/whatsapp.png" alt="what">
+  </div>
+    <span class="copyright">&copy; Littledrop Education Bootcamp, 2022.</span>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" ></script>
+<script src="./server.js">
+var login = document.getElementById('login');
+var register = document.getElementById('register')
+var button = document.getElementById('btn');
+console.log(login,register, btn);
+
+function myRegister(){
+login.style.left ="-400px";
+register.style.left ="50px";
+button.style.left ="110px";
+}
+
+function myLogin(){
+login.style.left ="50px";
+register.style.left ="450px";
+button.style.left ="0px";
+}
+myRegister()
+myLogin()
+
+// function myFunction() {
+//   var x = document.getElementsByClassName("hero");
+//   // x.style.display === "none"
+//     x.style.display = "block";
+
+//   // else {
+//   //   x.style.display = "none";
+//   // }
+// }
+
+// myFunction()
+</script>
+
+</body>
+</html>

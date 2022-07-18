@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="style.css"/>
+  <link rel="stylesheet" media="screen and (min-width: 768px)" href="style.css"/>
+  <link rel="stylesheet" media="screen and (min-width:1200px)" href="style.css"/>
+  <link rel="stylesheet"   href="style.css"/>
+  <title>Littledrop-Education || Website</title>
+  <link rel="icon" type="image/svg" sizes="35x35" href="Images/title-img.svg">
+</head>
+<body id="home">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <img class="navbar-toggler-icon new" src="Images/toggle-button.svg" alt="toogle-img"/>
+        </button>
+        <div><a href="./"><img class="logo" src="Images/ld-logo.svg" alt="logo-image"/></a></div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <img class="navbar-toggler-icon" id="close-nav" src="Images/icon-closenav.svg" alt="toogle-img"/>
+          </button>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./course">Coding Courses</a></li>
+                <li><a class="dropdown-item" href="./non-coding">Non-Coding Courses</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Account
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./form" onclick="myFunction()">Register</a></li>
+                <li><a class="dropdown-item" href="./form"onclick="myFunction()">Log-in</a></li>
+                <li><a class="dropdown-item" href="./form" onclick="myFunction()">Log-out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex">
+          <input class="form-control me-2" id="search-input" type="search" placeholder="Search for courses"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>  
+    </nav>
+  
+  <div class="heading">
+    <h1>LITTLEDROP <span class="header">EDUCATION BOOTCAMP</span></h1>
+    <p class="text">An online-based not-for-profit charity organization, bridging the gap between computer illiteracy and unemployemt among youths and women with e-courses to develop coding and non-coding skills.</p>
+    <a href="./form"><button class="btn1" type="submit" onclick="myFunction()">Start Here!</button></a>
+  </div>
+</div>
+
+<main>
+  <section class="choose-us-section">
+      <h2 class="why-choose-us-text">Why Choose Us?</h2>
+      <section class="chooseus-1">
+      <span class="chooseus-text"><img class="choose-us-imgs" src="Images/free.png" alt="free-image"/>With us at Little Drop education Bootcamp, you get free access to high-quality technical and technological courses at no cost.</span>
+      <span class="chooseus-text"><img class="choose-us-imgs" src="Images/writer.png" alt="free-image"/>Our courses are curated in a beginner-friendly way, and it is easily accessible.</span>
+      <span class="chooseus-text"><img class="choose-us-imgs" src="Images/medal.png" alt="free-image"/>Professional certification recognised by hiring industries across the globe.</span>
+    </section>
+    </section>
+
+    <!-------------------------------------Our Courses----------------------------------------------------------------------------------->
+    <section class="course-category">
+      <div class="course-col">
+      <h2>Our courses</h2>
+      <div class="course-row">
+        <a href="./course"><img src="Images/homepage-5.jpg"/></a>
+      <a class="course-col p" href="./course"><p>Our courses are divided into two categories, Coding and Non-coding. We train individuals with little or no coding knowledge to develop coding skills in five learning pathways: Data Science, Data Analysis with Business Intelligence, and Web Development by providing adequate resources, guidance, and mentorship.
+        We also run a non-coding segment where we train mentees on noncoding pathways with the following courses;
+        Social Media Management and Employability skills.
+      </p></a>
+    </div>
+      </div>
+    </section>
+<!------------------------------------------------------------------------------------>
+  
+  <section class="featured-courses">
+    <h2 class="our-courses-head"> Featured Courses</h2>
+    <div class="coding-courses">
+      <div class="courses-card">
+        <img class="courses-img" src="Images/data-analysis.jpg" ald="data-img"/>
+        <div class="jumbotron-btm">
+        <h3 class="display-4">Data Analysis with Business Intelligence</h3>
+        <p class="lead">This path will take 6 months to be completed and be job ready.</p>
+        <a class="btn learn" href="./course" role="button">Learn more</a>
+      </div>
+      </div>
+     
+      <div class="courses-card">
+        <img class="courses-img" src="Images/Social-media.jpg" alt="data-img">
+        <div class="jumbotron-btm">
+        <h3 class="display-4">Social Media Management</h3>
+        <p class="lead">This path will take 6 months to be completed and be job ready.</p>
+        <a class="btn learn" href="./non-coding" type="submit">Learn more</a>
+      </div>
+      </div>
+
+      <!-- <div class="courses-card">
+        <img class="courses-img" src="Images/image.jpg" alt="data-img">
+        <div class="jumbotron-btm">
+        <h3 class="display-4">Digital Marketing</h3>
+        <p class="lead">This path will take 6 months to be completed and ready for the labour market.</p>
+        <a class="btn learn" href="./non-coding.html" type="submit">Learn more</a>
+      </div>
+      </div>
+    </div>-->
+  </section>
+  
+<!-------------------------------------------------Sign-up------------------------------------------>
+<section class="start-here">
+  <h4 class="start-here-head">Get early access today</h4>
+  <p class="start-here-text">It only takes a minute to sign up and our free courses are quite easy to learn. if you have any questions, our support team would be happy to help you. It's time to learn and collaborate with other mentees. Select your course choice and let the journey begin</p>
+  <a href="./form"><button class="btn1 Sign-up" onclick="myFunction()">Start Here!</button></a>
+</section>
+
+<!----------------------------------------------------------------Testimonials------------------------------------>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <h2>What ex-mentees are saying about us</h2>
+  <div class="carousel-inner">
+    <div class="carousel-item shift active">
+      <div class="slide-col">
+        <div class="profile">
+            <div class="">
+              <h4>Adeyemi-Taiye Seun Ahmed</h4>
+              <p>Electrical/Product Design Engineer at Basic Works Nigeria Ltd</p>  
+          </div>
+          <img class="mentee-avatar" src="Images/male-avatar.jpeg" alt="..."/>
+         
+        </div>
+        <p>"It was an eye-opening project for me during my time in the boot camp as it gave me the needed exposure and platform to develop myself personally and career-wise."</p>
+            </div>
+        </div>
+
+        <div class="carousel-item shift">
+          <div class="slide-col">
+            <div class="profile">
+                <div class="">
+                  <h4>Barakat Odunola Salami-Akinpelu</h4>
+                  <p>User Experience designer</p>  
+              </div>
+              <img src="Images/hijab.jpeg" alt="..."/>
+             
+            </div>
+            <p>"It's been helpful and has been a stepping stone to greater benefits and privileges for me."</p>
+                </div>
+            </div>
+
+            <div class="carousel-item shift">
+              <div class="slide-col">
+                <div class="profile">
+                    <div class="">
+                      <h4>Abdulwasiu Tiamiyu</h4>
+                      <p>Session Lead/Mentor at Udacity</p>  
+                  </div>
+                  <img src="Images/male-avatar.jpeg" alt="..."/>
+                 
+                </div>
+                <p>"What I enjoyed most was the practice projects and mentorship. I got mentored by professionals from industries, and I still maintain the relationship to date."</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item shift">
+                  <div class="slide-col">
+                    <div class="profile">
+                        <div class="">
+                          <h4>Aminat Fagbenle</h4>
+                          <p>Front-end Developer</p>  
+                      </div>
+                      <img src="Images/niqab.jpeg" alt="..."/>
+                     
+                    </div>
+                    <p>"At first, I was scared to message our mentor then, but I didn't regret reaching out as it turned out to be a journey to clarity as I was confused about which pathway can lead to success after graduation from the University. Although I'm not at the peak of my career yet as a veiled Muslim woman, with Little Drop, I smell a bright future as a Front End Developer."</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item shift">
+                      <div class="slide-col">
+                        <div class="profile">
+                            <div class="">
+                              <h4>Ridwan Abdulkareem</h4>
+                              <p>Junior frontend developer with Hamoye</p>  
+                          </div>
+                          <img src="Images/male-avatar.jpeg" alt="..."/>
+                         
+                        </div>
+                        <p>"Being on the Little Drop Education Bootcamp was one of the fantastic things that happened to me when I started learning to code in late 2020. I was coming with little experience with HTML, CSS, and a bit of Javascript, but the learning experience I had with Little drops was exceptional. It was nice to work on what I considered a massive task within a set time. I picked up lessons from various perspectives and was able to take the initiative and be forward-thinking. The support from the Admin was fantastic. The fact that it was even a free Bootcamp while the support was yet massive is just mind-blowing. I recommend signing up for Bootcamp if you're starting your career in tech."</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item shift">
+                          <div class="slide-col">
+                            <div class="profile">
+                                <div class="">
+                                  <h4>Adebukola Omowole</h4>
+                                  <p>Junior Frontend Developer with UI/UX Designing</p>  
+                              </div>
+                              <img src="Images/niqab.jpeg" alt="..."/>
+                            </div>
+                            <p>"Littledrop bootcamp was a steping stone for me to start a career in tech, I never knew I could code let alone view my designs live. My passion for designing has continue to grow and I see a better version of myself everyday. Thank you Little"</p>                        
+                          </div>
+                            </div>
+
+                            <div class="carousel-item shift">
+                              <div class="slide-col">
+                                <div class="profile">
+                                    <div class="">
+                                      <h4>Precious Iwuanyanwu</h4>
+                                      <p>Data Analyst at Deloitte</p>  
+                                  </div>
+                                  <img src="Images/male-avatar.jpeg" alt="..."/>
+                                </div>
+                                <p>"LD Bootcamp built my capacity when I started my journey in Data Analytics and Machine Learning.  The experience was an incredible journey that taught me the ability to meet up with project deadlines, and this helped me in completing/delivering client services in the Forensic unit at KPMG."</p>
+                                    </div>
+                                </div>
+  </div>
+</div>
+</main>
+<!-------------------------------------Footer---------------------------------------------------------------------------->
+<footer id="footer">
+    <div class="footer">
+    <a href="./"><img class="footer-logo" src="Images/ld-logo.svg" alt="ld-logo"/></a>
+    <div class="footer-text">
+      <h5>About Us</h5>
+      <p>We are a not-for-profit organization</p>
+      <a href="./About>Learn more</a>
+  </div>
+  <div class="footer-text">
+      <h5>Contact Us</h5>
+  <a href="#">Email: littledropedu@gmail.com</a>
+  <br>
+  <a href ="#">Phone: 09135962695</a> 
+  </div>
+  <div class="footer-text">
+    <button class="donate" id="donate-btn" onclick="showDiv()">Donate</button>
+    <p>
+      To keep the bootcamp running for free, your kind support is highly needed. Please hit the donate tab for details. Thank you as you donate genourously towards the growth of this project.
+    </p>
+  </div>
+<div class="show-details" id="show-div">
+  <div class="donation-tab">
+  <div>
+  <img class="navbar-toggler-icon" id="close-donate" onclick="hideDiv()" src="Images/icon-closenav.svg" alt="toogle-img"/>
+  <h5>Dollar Donation</h5>
+  <p>Account Name: LITTLE DROP CHARITY ENDOWMENT INITIATIVE</p>
+    <p> Jaiz Bank(Dollar)</p>
+    <p>Account Number: 0004540755</p>
+    <p>Ref: Edu Project(please add this reference)</p>
+  </div>
+  <br>
+  <br>
+  <div>
+  <h5>Naira Account</h5>
+  <p>You can send your Naira donations to: Little Drop Education Project:
+   <p>Bank Name: Jaiz</p>
+    <p>Account Name: Little Drop Charity -Education Project</p>
+    <p>Account Number: 0004586951</p>
+<p><strong>Thank You</strong></p>
+</div>
+</div>
+</div>
+</div>
+  
+    <div class="social-media-icons">
+      <img src="Images/facebook.png" alt="facebook-icon">
+      <img src="Images/linkedin.png" alt="in">
+      <img src="Images/twitter.png" alt="twit">
+      <img src="Images/whatsapp.png" alt="what">
+    </div>
+      <span class="copyright">&copy; Littledrop Education Bootcamp, 2022.</span>
+</footer>
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" ></script>
+<script src="./server.js">
+  var login = document.getElementById('login');
+var register = document.getElementById('register')
+var button = document.getElementById('btn');
+console.log(login,register, btn);
+
+function myRegister(){
+  login.style.left ="-400px";
+  register.style.left ="50px";
+  button.style.left ="110px";
+}
+
+function myLogin(){
+  login.style.left ="50px";
+  register.style.left ="450px";
+  button.style.left ="0px";
+}
+myRegister()
+myLogin()
+
+// function myFunction() {
+//   var x = document.getElementsByClassName("hero");
+//   // x.style.display === "none"
+//     x.style.display = "block";
+ 
+//   // else {
+//   //   x.style.display = "none";
+//   // }
+// }
+
+// myFunction()
+</script>
+
+</body>
+</html>

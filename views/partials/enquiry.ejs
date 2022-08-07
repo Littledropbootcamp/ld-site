@@ -1,11 +1,11 @@
 <div class="enquiry">
     <form action="/enquiry" method="POST" >
         <h2 id="contact-text">Contact Us</h2>
-        <input type="text" name="name" id="name" placeholder="Name"/>
+        <input type="text" name="name" id="name" placeholder="Name" required/>
         <br>
-        <input type="type" name="email" id="email" placeholder="Email"/>
+        <input type="type" name="email" id="email" placeholder="Email" required/>
         <br>
-        <textarea class="contact-message" type="text"></textarea>
+        <textarea name="message" class="contact-message" type="text" required></textarea>
         <br>
         <button class="btn1 sign-up" id="submit-btn">SEND NOW</button>
     </form>   

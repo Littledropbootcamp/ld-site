@@ -1,28 +1,30 @@
 
 const courses = {
     // "mobile app development" : "MD",
-    "web development" : "WD",
+    "web development" : "wd",
     // "data analysis" : "DA",
-    "datascience" : "DS",
-    "data analysis with business intelligence" : "BI",
+    "datascience" : "ds",
+    "data analysis with business intelligence" : "bi",
     // "digital marketing" : "DM",
     // "project management" : "PM",
-    "social media marketing" : "SM",
-    "employability skills" : "ES"
+    "social media marketing" : "sm",
+    "employability skills" : "es"
 
 }
 
 async function searchCourse (req, res)  {
     try {
-        const query = req.body.query;
+        const query = req.body.query.toLowerCase();
+        console.log(query)
         let paths = []
         for ( const [course, path] of Object.entries(courses)) {
-            let re = new RegExp(query, "i");
+            let re = new RegExp(query, "ig");
             if (course.match(re)) {
                 paths.push(path)
                
             }
         }
+        console.log(`REGULAR EXPRESSION : ${paths}`)
         if (paths.length < 1){
             throw error
         }

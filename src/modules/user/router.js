@@ -1,10 +1,9 @@
 const Router = require("express").Router()
-const { signin, signup } = require("./controller")
+const { signup, enquiry } = require("./controller")
 
 const UserRouter = (app) => {
     Router.post('/signup', signup)
-    Router.post('/signin', signin)
-    // Router.get('/testsignin', testSignin)
+    Router.post('/enquiry', enquiry)
     app.use(Router)
 }
 

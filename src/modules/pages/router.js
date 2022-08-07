@@ -19,15 +19,17 @@ const PagesRouter = (app) => {
     Router.get('/course', (req, res) => {
         res.render("course")
     })
-    Router.get('/Employability', (req, res) => {
+    Router.get('/coding', (req, res) => {
+        res.render("coding")
+    })
+    
+    Router.get('/Datascience', (req, res) => {
         res.render("Datascience")
     })
-    Router.get('/', (req, res) => {
+    Router.get('/Employability', (req, res) => {
         res.render("Employability")
     })
-    Router.get('/form', (req, res) => {
-        res.render("form", { signupError : "", signinError : ""})
-    })
+   
     Router.get('/non-coding', (req, res) => {
         res.render("non-coding")
     })

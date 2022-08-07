@@ -1,12 +1,12 @@
 
 const courses = {
-    "mobile app development" : "MD",
+    // "mobile app development" : "MD",
     "web development" : "WD",
-    "data analysis" : "DA",
+    // "data analysis" : "DA",
     "datascience" : "DS",
-    "business intelligence" : "BI",
-    "digital marketing" : "DM",
-    "project management" : "PM",
+    "data analysis with business intelligence" : "BI",
+    // "digital marketing" : "DM",
+    // "project management" : "PM",
     "social media marketing" : "SM",
     "employability skills" : "ES"
 
@@ -14,21 +14,24 @@ const courses = {
 
 async function searchCourse (req, res)  {
     try {
-        let query = req.params.query;
+        const query = req.body.query;
+        let paths = []
         for ( const [course, path] of Object.entries(courses)) {
             let re = new RegExp(query, "i");
-            if (!course.match(re)) {
-                const error = new Error("Course not available")
-                error.code = 400
-                throw error
+            if (course.match(re)) {
+                paths.push(path)
+               
             }
-            course.match(re)
-            res.send(path)
-            return
         }
+        if (paths.length < 1){
+            throw error
+        }
+        res.render("search", { paths })
+        return
     } 
     catch (error) {
-        res.send(error.message)
+        error.message = "Course not available"
+        res.render("not-found")
     }
 }
 

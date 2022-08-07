@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <%- include("./partials/head.ejs") %>
+  <!-- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
@@ -12,10 +13,13 @@
   <link rel="stylesheet" href="style.css"/>
   <title>Littledrop-Education || Website</title>
   <link rel="icon" type="image/svg" sizes="35x35" href="Images/title-img.svg">
-</head>
+</head> -->
 <body id="home">
   <div class="container-3">
-    <nav class="navbar navbar-expand-lg">
+  <%- include("./partials/nav.ejs") %>
+
+
+    <!-- <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
           <img class="navbar-toggler-icon" src="Images/toggle-button.svg" alt="toogle-img"/>
@@ -54,7 +58,7 @@
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>  
-    </nav>
+    </nav> -->
   </div>
   <!-------------------------------------------------------------------End of Navbar----------------------------------->
   <section class="contact-section">
@@ -63,7 +67,7 @@
    </p>
    </section>
 
-    <main class="contact-general">
+    <!-- <main class="contact-general">
         <div class="general-enquiry">
             <h2 id="contact-text">General Enquiries</h2>
         <div class="phone-img" >
@@ -87,8 +91,29 @@
         <br>
         <button class="btn1 sign-up" id="submit-btn">SEND NOW</button>
     </div>
-    </main>
-    <footer id="footer">
+    </main> -->
+
+    <main class="contact-general">
+      <div class="general-enquiry">
+          <h2 id="contact-text">General Enquiries</h2>
+      <div class="phone-img" >
+        <p class="contact-number1"><img src="Images/icone-phone.svg" alt="phone"/>  +2349135962695 </p>
+     </div>
+           <p class="contact-mail"><img class="mail-img" src="Images/icon-email.svg" alt="mail"/>  littledropedu@gmail.com </p>
+      <br>
+          <h2 id="contact-text">Our Location</h2>
+
+      <div class="contact-location"> 
+          <p class="location-text"> 6 Otunba Oshikoya Drive, Mobolaji Bank Anthony Way, Maryland-Ikeja, Lagos, Nigeria.</p>
+        </div>
+      </div>
+  
+      <%- include("./partials/enquiry.ejs") %>
+  </main>
+  
+    <%- include("./partials/footer.ejs") %>
+    
+    <!-- <footer id="footer">
       <div class="footer">
       <a href="./"><img class="footer-logo" src="Images/ld-logo.svg" alt="ld-logo"/></a>
       <div class="footer-text">
@@ -139,7 +164,7 @@
       <img src="Images/whatsapp.png" alt="what">
       </div>
         <span class="copyright">&copy; Littledrop Education Bootcamp, 2022.</span>
-  </footer>
+  </footer> -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
       <script src="./server.js"></script>
       </body>

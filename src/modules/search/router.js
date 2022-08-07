@@ -2,7 +2,7 @@ const Router = require('express').Router()
 const { searchCourse } = require('./controller')
 
 const SearchRouter = (app) => {
-    Router.get("/search/:query", searchCourse);
+    Router.post("/search", searchCourse);
     app.use(Router)
 }
 

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+ <%- include("./partials/head.ejs") %>
+<body>
+   <%- include("./partials/nav.ejs") %>
+
+  <% if(paths.length > 0) { %> 
+    <% paths.forEach( path => { %> 
+        <%- include(`./partials/${path}.ejs`) %>
+         <%}) %>
+    
+     <%} else { %> 
+        <h1>Course is not available</h1>
+         <% } %>
+
+<%- include("./partials/footer.ejs") %>
+
+<%- include("./partials/script.ejs") %>
+
+</body>
+</html>

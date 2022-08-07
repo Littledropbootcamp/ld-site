@@ -17,8 +17,23 @@ class Settings {
     static getWEB_URI() {
         return process.env.WEB_URI;
     }
-    static getTokenSecret() {
-        return process.env.TOKEN_SECRET;
+    static getRefreshToken() {
+        return process.env.OAUTH_REFRESH_TOKEN;
+    }
+    static getClientID() {
+        return process.env.OAUTH_CLIENTID;
+    }
+    static getClientSecret() {
+        return process.env.OAUTH_CLIENT_SECRET;
+    }
+    static getPassword() {
+        return process.env.MAIL_PASSWORD;
+    }
+    static getUser() {
+        return process.env.MAIL_USERNAME;
+    }
+    static getPort() {
+        return process.env.PORT;
     }
 }
 module.exports = Settings;

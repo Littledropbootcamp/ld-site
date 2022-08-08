@@ -859,6 +859,7 @@ strong{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 50px;
 }
 .course-page img{
   padding-right: 50px;

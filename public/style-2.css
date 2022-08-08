@@ -747,6 +747,20 @@ textarea{
 .coding1 h1{
   margin-top: 0px;
 }
+
+.container-4{
+  min-height: 60vh;
+  width: 100%;
+  /* background-image: url('Images/aboutpage.svg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  padding-bottom: 20px;  
+  margin-bottom: 0px;
+}
 /*-----------------------------------------------------coding courses------------------------------------------------------------*/
 .container-courses{
   top: 0;
@@ -845,6 +859,7 @@ strong{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 50px;
 }
 .course-page img{
   padding-right: 50px;

@@ -5,8 +5,10 @@ const { validateData } = require("../../utils/validator")
 
 const { signupSchemaValidator, enquirySchemaValidator } = require('./schema')
 
-const emailBody = 
-"<h1>Welcome to Little Drop Education Bootcamp</h1> <p>An online not-for-profit organization tackling computer illiteracy and youth unemployment rates.</p> <p>We will keep updating you on events such as new cohort form opening, newsletters, fantastic articles and lots more</p><p>Kindly follow us on our social media pages</p>"
+async function emailTemplate (name){
+    const emailBody = `<h4>Hi ${name}</h4><h3>Welcome to Little Drop Education Bootcamp</h3> <p>An online not-for-profit organization tackling computer illiteracy and youth unemployment rates.</p> <p>We will keep updating you on events such as new cohort form opening, newsletters, fantastic articles and lots more</p><p>Kindly follow us on our social media pages</p><p><a href='https://www.linkedin.com/in/little-drop-430106210'>LinkedIn</a></p><p><a href='https://twitter.com/DropEducation?s=08'>Twitter</a></p>`
+    return emailBody
+}
 
 
 let transporter = nodemailer.createTransport({
@@ -32,11 +34,12 @@ async function signup (req, res) {
             throw data.err;
         }
 
+        let userMail = await emailTemplate(name)
         let mailOptions = {
             from: Settings.getUser(),
             to: email,
             subject: 'Welcome',
-            html: emailBody,
+            html: userMail,
           };
 
         

@@ -15,7 +15,6 @@ const courses = {
 async function searchCourse (req, res)  {
     try {
         const query = req.body.query.toLowerCase();
-        console.log(query)
         let paths = []
         for ( const [course, path] of Object.entries(courses)) {
             let re = new RegExp(query, "ig");
@@ -24,7 +23,6 @@ async function searchCourse (req, res)  {
                
             }
         }
-        console.log(`REGULAR EXPRESSION : ${paths}`)
         if (paths.length < 1){
             throw error
         }

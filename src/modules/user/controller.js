@@ -75,7 +75,7 @@ async function enquiry (req, res) {
         let mailOptions = {
             from: Settings.getUser(),
             to: "ldecoding1@gmail.com",
-            subject: 'Enquiry - LD Website',
+            subject: 'Contact Us - LD Website',
             html: `<h2>From ${name} ${email} </h2> <p>${message}</p>`
           };
 

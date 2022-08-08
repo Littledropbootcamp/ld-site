@@ -767,7 +767,7 @@ textarea{
   padding-top: 200px;
 } */
 .coding-head h1, .noncoding-head h1{
-  margin-top: 50px;
+  margin-top: 0px;
   font-size: 30px;
   text-align: center;
   font-weight: 700;
@@ -991,9 +991,9 @@ form div{
 
 
 /*-----------------------------------Media query Mobile----------------------------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   body{
-    max-width: 600px;
+    max-width: 767px;
   }
    /*----------------------------Navbar toogle button-----------------------------------*/
  .navbar-toggler-icon{
@@ -1899,7 +1899,7 @@ form div{
     }
     /*---------------button-----------------------*/
     .learn{
-      width: 50%;
+      /*width: 50%;*/
       align-items: center;
     }
   .enroll{

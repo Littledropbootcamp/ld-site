@@ -3,7 +3,7 @@ const courses = {
     // "mobile app development" : "MD",
     "web development" : "wd",
     // "data analysis" : "DA",
-    "datascience" : "ds",
+    "data science" : "ds",
     "data analysis with business intelligence" : "bi",
     // "digital marketing" : "DM",
     // "project management" : "PM",

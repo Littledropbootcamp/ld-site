@@ -73,8 +73,7 @@ async function enquiry (req, res) {
             from: Settings.getUser(),
             to: "ldecoding1@gmail.com",
             subject: 'Enquiry - LD Website',
-            text: `Hi little drop I am ${name} (${email}). This is my message
-                  ${message} Regards`
+            html: `<h2>From ${name} ${email} </h2> <p>${message}</p>`
           };
 
         transporter.sendMail(mailOptions, function(err, data) {

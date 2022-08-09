@@ -293,7 +293,7 @@ main{
   flex-direction: row;
   padding-top: 50px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 50px;
   align-items: center;
 }
@@ -307,7 +307,7 @@ main{
   padding-top: 0px;
   padding-bottom: 0px;
   margin-right: 0px;
-  width: 400px;
+  width: 350px;
   /* height: 100%; */
   background-color: #fff;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
@@ -319,8 +319,8 @@ main{
 }
 .courses-img{
   transition: 1s;
-  align-items: center;
-  justify-content: space-between;
+/*   align-items: center;
+  justify-content: space-between; */
   width: 350px;
   height: 250px;
   border-radius: 10px;
@@ -1707,6 +1707,8 @@ form div{
   .shift{
     width: 100%;
   }
+  .learn{
+    width: 50%;
  #footer{
   margin-top: 50px;
  }

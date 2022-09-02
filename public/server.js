@@ -1,5 +1,5 @@
 //-------------------------Enroll now==============================
-document.getElementById("action-btn").addEventListener("click", function(){alert("Registration closed");});
+// document.getElementById("action-btn").addEventListener("click", function(){alert("Registration closed");});
 
 
 //Donation tab===========================================================================
@@ -48,38 +48,3 @@ function hide() {
 }
 
 hide();
-
-
-// when users click log out button the close nav button doesn't display//
-// document.addEventListener("click", myFunc);
-// function myFunc(){
-//   console.log("clicked");
-//   document.getElementById("close-form").style.display = "none";
-// }
-
-// hide nav links---------------------------------------------
-// function close() {
-//   var navList = document.getElementById("navlist");
-//   console.log(navList);
-//   if ( navList.style.display ="block"){
-//     navList.style.display ="none";
-//   }else{
-//     navList.style.display = "block";
-//   }
-//   // document.getElementById("clickme").style.display = "block";
-// }
-
-// close();
-
-
-
-// var form =document.getElementById('form')
-// form.addEventListener('submit', function(event){
-//   event.preventDefault();
-
-//   var firstName =document.getElementById('email').value;
-//   var firstName =document.getElementById('password').value;
-
-// })
-// loginUser()
-// // fetch('')
